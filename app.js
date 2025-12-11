@@ -1,4 +1,4 @@
-require("dotenv").config();
+// require("dotenv").config(); //repris dans server.js qui se lance en premier
 
 var express = require('express');
 var path = require('path');
@@ -25,5 +25,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/meditation', meditationRouter);
+
 
 module.exports = app;

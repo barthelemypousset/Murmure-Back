@@ -7,7 +7,7 @@ const meditations = [
     theme: "anxiete",
     mode: "guidee",
     durations: {
-      3: "https://res.cloudinary.com/dmbowwvt8/video/upload/v1765199945/Murmure__Medit_detente_3_min.m4a",
+      3: "https://res.cloudinary.com/dmbowwvt8/video/upload/v1765279887/Murmure_Anxiete_3_min_abgfhl.mp3", //IA ElevenLabs
       5: "https://res.cloudinary.com/dmbowwvt8/video/upload/v1765199945/Murmure__Medit_detente_3_min.m4a",
       10: "https://res.cloudinary.com/dmbowwvt8/video/upload/v1765199945/Murmure__Medit_detente_3_min.m4a",
     },
@@ -16,7 +16,7 @@ const meditations = [
     theme: "detente",
     mode: "guidee",
     durations: {
-      3: "https://res.cloudinary.com/dmbowwvt8/video/upload/v1765199945/Murmure__Medit_detente_3_min.m4a",
+      3: "https://res.cloudinary.com/dmbowwvt8/video/upload/v1765199945/Murmure__Medit_detente_3_min.m4a", //Stéphanie
       5: "https://res.cloudinary.com/dmbowwvt8/video/upload/v1765199945/Murmure__Medit_detente_3_min.m4a",
       10: "https://res.cloudinary.com/dmbowwvt8/video/upload/v1765199945/Murmure__Medit_detente_3_min.m4a",
     },
@@ -25,7 +25,7 @@ const meditations = [
     theme: "sommeil",
     mode: "guidee",
     durations: {
-      3: "https://res.cloudinary.com/dmbowwvt8/video/upload/v1765199945/Murmure__Medit_detente_3_min.m4a",
+      3: "https://res.cloudinary.com/dmbowwvt8/video/upload/v1765279302/Murmure_Sommeil_3min_y34fz0.mp3", //IA ElevenLabs
       5: "https://res.cloudinary.com/dmbowwvt8/video/upload/v1765199945/Murmure__Medit_detente_3_min.m4a",
       10: "https://res.cloudinary.com/dmbowwvt8/video/upload/v1765199945/Murmure__Medit_detente_3_min.m4a",
     },
