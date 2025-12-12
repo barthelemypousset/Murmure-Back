@@ -50,9 +50,46 @@ router.post('/signin', (req, res) => {
 
   User.findOne({ email: req.body.email }).then((data) => {
     if (data && bcrypt.compareSync(req.body.password, data.password)) {
-      res.json({ result: true, token: data.token });
+      res.json({ result: true, token: data.token, username: data.username });
     } else {
       res.json({ result: false, error: "User not found or wrong password" });
+    }
+  });
+});
+
+router.put('/updateUsername', (req, res) => {
+  if (!checkBody(req.body, ["token", "newUsername"])) {
+    res.json({ result: false, error: "Missing or empty fields" });
+    return;
+  }
+
+  User.findOne({ token: req.body.token }).then((data) => {
+    if (data) {
+      User.updateOne(
+        { token: req.body.token },
+        { username: req.body.newUsername }
+      ).then(() => {
+        res.json({ result: true, username: req.body.newUsername });
+      });
+    } else {
+      res.json({ result: false, error: "User not found" });
+    }
+  });
+});
+
+router.delete('/deleteUser', (req, res) => {
+  if (!checkBody(req.body, ["token"])) {
+    res.json({ result: false, error: "Missing or empty fields" });
+    return;
+  }
+
+  User.findOne({ token: req.body.token }).then((data) => {
+    if (data) {
+      User.deleteOne({ token: req.body.token }).then(() => {
+        res.json({ result: true, message: "User deleted successfully" });
+      });
+    } else {
+      res.json({ result: false, error: "User not found" });
     }
   });
 });
