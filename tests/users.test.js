@@ -1,6 +1,6 @@
-require("dotenv").config();
-const request = require("supertest");
-const app = require("../app");
+require('dotenv').config();
+const request = require('supertest');
+const app = require('../app');
 
 /* 
 Test de la route PUT users/updateUsername avec le user pol
@@ -8,68 +8,68 @@ Test de la route PUT users/updateUsername avec le user pol
   token: "8oRMCUkBxatlFAI-CILG5e8n6B74tpWq"
 */
 
-it("Missing token", async () => {
-  const res = await request(app).put("/users/updateUsername").send({
-    newUsername: "NewName",
+it('Missing token', async () => {
+  const res = await request(app).put('/users/updateUsername').send({
+    newUsername: 'NewName',
   });
 
   expect(res.statusCode).toBe(200);
   expect(res.body.result).toBe(false);
-  expect(res.body.error).toBe("Missing or empty fields");
+  expect(res.body.error).toBe('Missing or empty fields');
 });
 
-it("Missing newUsername", async () => {
-  const res = await request(app).put("/users/updateUsername").send({
-    token: "8oRMCUkBxatlFAI-CILG5e8n6B74tpWq",
+it('Missing newUsername', async () => {
+  const res = await request(app).put('/users/updateUsername').send({
+    token: '8oRMCUkBxatlFAI-CILG5e8n6B74tpWq',
   });
 
   expect(res.statusCode).toBe(200);
   expect(res.body.result).toBe(false);
-  expect(res.body.error).toBe("Missing or empty fields");
+  expect(res.body.error).toBe('Missing or empty fields');
 });
 
-it("Empty fields", async () => {
-  const res = await request(app).put("/users/updateUsername").send({
-    token: "",
-    newUsername: "",
+it('Empty fields', async () => {
+  const res = await request(app).put('/users/updateUsername').send({
+    token: '',
+    newUsername: '',
   });
 
   expect(res.statusCode).toBe(200);
   expect(res.body.result).toBe(false);
-  expect(res.body.error).toBe("Missing or empty fields");
+  expect(res.body.error).toBe('Missing or empty fields');
 });
 
-it("Invalid token", async () => {
-  const res = await request(app).put("/users/updateUsername").send({
-    token: "randomString",
-    newUsername: "NewName",
+it('Invalid token', async () => {
+  const res = await request(app).put('/users/updateUsername').send({
+    token: 'randomString',
+    newUsername: 'NewName',
   });
 
   expect(res.statusCode).toBe(200);
   expect(res.body.result).toBe(false);
-  expect(res.body.error).toBe("User not found");
+  expect(res.body.error).toBe('User not found');
 });
 
-it("Successful update", async () => {
-  const res = await request(app).put("/users/updateUsername").send({
-    token: "8oRMCUkBxatlFAI-CILG5e8n6B74tpWq",
-    newUsername: "Polpol",
+it('Successful update', async () => {
+  const res = await request(app).put('/users/updateUsername').send({
+    token: '8oRMCUkBxatlFAI-CILG5e8n6B74tpWq',
+    newUsername: 'Polpol',
   });
 
   expect(res.statusCode).toBe(200);
   expect(res.body.result).toBe(true);
-  expect(res.body.username).toBe("Polpol");
+  expect(res.body.username).toBe('Polpol');
 });
 
-it("Restore username", async () => {
-  const res = await request(app).put("/users/updateUsername").send({
-    token: "8oRMCUkBxatlFAI-CILG5e8n6B74tpWq",
-    newUsername: "pol",
+it('Restore username', async () => {
+  const res = await request(app).put('/users/updateUsername').send({
+    token: '8oRMCUkBxatlFAI-CILG5e8n6B74tpWq',
+    newUsername: 'pol',
   });
 
   expect(res.statusCode).toBe(200);
   expect(res.body.result).toBe(true);
-  expect(res.body.username).toBe("pol");
+  expect(res.body.username).toBe('pol');
 });
 
 /*  

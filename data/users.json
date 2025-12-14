@@ -1,0 +1,58 @@
+[
+  {
+    "_id": {
+      "$oid": "693be6a8121d1cb4ad678db0"
+    },
+    "email": "pol@pol.pol",
+    "username": "pol",
+    "password": "$2b$10$2fAnLvk7ZjYuh0U7UboR9eZH7X1r8g9Eg06NnYL6CyySybORYbiLK",
+    "token": "8oRMCUkBxatlFAI-CILG5e8n6B74tpWq",
+    "creationDate": {
+      "$date": "2025-12-12T09:55:52.000Z"
+    },
+    "progressNb": 0,
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "693f2b4edd6456f8dc261aac"
+    },
+    "email": "pierre@pierre.com",
+    "username": "pierre",
+    "password": "$2b$10$Rs7pNmt9xqtvFMdiJz22/.vuvkMhxgxHq7JtuNHKfZiL2BvbwhJv6",
+    "token": "pj5JIsnwm60YjP7tmPyV_DVbUnfUVfQ3",
+    "creationDate": {
+      "$date": "2025-12-14T21:25:34.309Z"
+    },
+    "progressNb": 0,
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "693f2b8add6456f8dc261ab0"
+    },
+    "email": "pam@pam.pam",
+    "username": "Pam",
+    "password": "$2b$10$9HuNxXE37t1iT05e7Lld9.AAyHs8SIy0.erzz.NnxZtXZHgZdOrKm",
+    "token": "UbzOXLXJ6gFFxqMgZJPaFCW8Y6zZ9ti0",
+    "creationDate": {
+      "$date": "2025-12-14T21:26:34.711Z"
+    },
+    "progressNb": 0,
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "693f2ba5dd6456f8dc261ab3"
+    },
+    "email": "tim@tim.tim",
+    "username": "Tim",
+    "password": "$2b$10$UQC83jRdXMddrIhgmxnhG.lU0RRgQEGv8115Q/MkvxoQbXQgULqNK",
+    "token": "Dvu9bc0eLy4uxD5C6BQXL6PiQKCAzwUa",
+    "creationDate": {
+      "$date": "2025-12-14T21:27:01.479Z"
+    },
+    "progressNb": 0,
+    "__v": 0
+  }
+]
