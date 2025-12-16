@@ -21,25 +21,26 @@ const importData = async () => {
     await mongoose.connect(process.env.CONNECTION_STRING_MONGODB);
     console.log('✅ Connecté à MongoDB');
 
-    // Optionnel : Vider la collection avant
-    await Chapter.deleteMany();
+    // Useer
     await User.deleteMany();
-    console.log('🗑️ Données précédentes effacées');
-
-    // Créer les données (Mongoose validera chaque entrée ici)
-    await Chapter.create(chapterData);
-    console.log('🌱 Données importées avec succès !');
+    console.log('🗑️ Données user précédentes effacées');
 
     await User.create(userData);
-    console.log('🌱 Données importées avec succès !');
+    console.log('🌱 Données user importées avec succès !');
 
-    // Vider avant:
+    // Chapters
+    await Chapter.deleteMany();
+    console.log('🗑️ Données chapters précédentes effacées');
+
+    await Chapter.create(chapterData);
+    console.log('🌱 Données chapters importées avec succès !');
+
+    // Meditation
     await Meditation.deleteMany();
-    console.log('Données méditations précédentes effacées');
+    console.log('🗑️ Données méditations précédentes effacées');
 
-    // Importer
     await Meditation.create(meditationData);
-    console.log('Données méditation importées avec succès !');
+    console.log('🌱 Données méditation importées avec succès !');
 
     process.exit();
   } catch (error) {

@@ -125,10 +125,10 @@
           ]
         }
       ],
-      "result": [
-        "Majorité de A : Ton “circuit court” adore prendre les commandes → rapide, instinctif et un peu drama-queen par moments.",
-        "Majorité de B : Un parfait mix ! Tu ressens vite, mais tu sais aussi prendre du recul quand il faut.",
-        "Majorité de C : Ton cortex préfrontal est ton meilleur pote → calme, réflexion et maîtrise sont tes super-pouvoirs."
+      "results": [
+        "Ton “circuit court” adore prendre les commandes → rapide, instinctif et un peu drama-queen par moments.",
+        "Un parfait mix ! Tu ressens vite, mais tu sais aussi prendre du recul quand il faut.",
+        "Ton cortex préfrontal est ton meilleur pote → calme, réflexion et maîtrise sont tes super-pouvoirs."
       ]
     },
     "flashcard": {
@@ -138,6 +138,143 @@
       "keyConcept": "🧩 Concepts clés\n- Limbique = Alerte immédiate\n- Préfrontal = Régulateur (le sage en toi)\n- Équilibre = Intelligence émotionnelle\n\n",
       "exemple": "⚡️ Exemple rapide\nUne ombre bouge le soir :\n→ Circuit court (Limbique) : Tu cries !\n→ Circuit long (Préfrontal) : Tu réalises que c'est juste le rideau.\n\n",
       "exercice": "📝 Mini-exercice (30 secondes)\nLa prochaine fois qu'une émotion monte :\n1. Stop ! Ne réagis pas tout de suite.\n2. Nomme l'émotion (« Je ressens de la colère »).\n3. Demande à ton cortex préfrontal : « Est-ce utile de crier ? »\n\n→ Tu viens de passer du réflexe à la réflexion."
+    }
+  },
+  {
+    "index": 4,
+    "logo": "😰",
+    "title": "Chapitre 4: C'est quoi l'anxiété ?",
+    "content": "L'anxiété c'est un peu comme un signal d'alarme de ton corps quand le stress pointe le bout de son nez ou qu'une situation te semble flippante. Elle peut se traduire par des pensées qui tournent en boucle, des tensions dans le corps ou une sensation d'agitation. Tout le monde y a droit de temps en temps, mais quand elle revient trop intense, peut vraiment compliquer le quotidien.\n\nL'anxiété peut être déclenchée par plein de trucs : le boulot, les relations, la santé, ou même des situations sociales. C'est normal de ressentir ça, mais apprendre à gérer son anxiété c'est super important pour garder la tête froide et le moral au top.\n\n",
+    "quiz": {
+      "questions": [
+        {
+          "question": "Quand l'anxiété apparait, tu as tendance...",
+          "answers": [
+            "Vouloir la faire disparaître immédiatement.",
+            "T'inquiéter de ce qu'elle signifie.",
+            " L'observer et attendre qu'elle passe."
+          ]
+        },
+        {
+          "question": "Face à des sensations physiques d'anxiété (coeur qui bat, souffle court) tu penses plutôt:",
+          "answers": ["Je dois reprendre le contrôle", "Quelque chose ne va pas", "Mon corps réagit, ça va se calmer"]
+        },
+        {
+          "question": "Après un moment anxieux, tu te dis le plus souvent.",
+          "answers": [
+            "J'aurais dû mieux gérer.",
+            "J'espère que ça ne va pas revenir.",
+            "J'ai traversé, même si c'était inconfortable."
+          ]
+        }
+      ],
+      "results": [
+        "Tu as tendance à vouloir contrôler l'anxiété, ce qui peut parfois l'amplifier. Essaie des techniques de relaxation pour apaiser ton esprit.",
+        "Tu es conscient de ton anxiété mais tu t'inquiètes souvent de ses implications. Pratiquer la pleine conscience pourrait t'aider à rester ancré dans le moment présent.",
+        "Bravo ! Tu observes ton anxiété sans jugement et tu la laisses passer. Continue à cultiver cette attitude d'acceptation."
+      ]
+    },
+    "flashcard": {
+      "title": "Flashcard : L’Anxiété",
+      "definition": "🔍 Définition\nL’anxiété = une anticipation de danger, réel ou imaginaire.\nC’est une réaction normale du cerveau quand il pense devoir se protéger.\n\n",
+      "why": "🎯 Pourquoi ?\nElle signale un besoin de sécurité.\nElle prépare le corps à agir (même quand ce n’est pas nécessaire).\nMieux la comprendre aide à la diminuer.\n\n",
+      "keyConcept": "🧩 Concepts clés\nAnxiété = pensée + sensation corporelle.\nLe cerveau anticipe : « Et si… »\nLe corps réagit comme s’il y avait un danger immédiat.\n\n",
+      "exemple": "⚡️ Exemple rapide\nTu penses à une situation stressante → cœur qui s’accélère → respiration plus courte → tensions dans le corps.\nTu observes ces sensations → tu respires → le signal d’alarme baisse.\n\n",
+      "exercice": "📝 Mini-exercice (30 secondes)\n1. Nomme la pensée (« Et si… »).\n2. Repère 2 sensations dans ton corps.\n3. Dis mentalement : « C’est de l’anxiété, pas un danger. »\n4. Expire lentement 2 fois.\n\n→ Félicitations, tu viens d’apaiser ton système nerveux !"
+    }
+  },
+  {
+    "index": 5,
+    "logo": "🎯",
+    "title": "Chapitre 5: Tu es en sécurité.",
+    "content": "Se sentir en sécurité, c'est comme avoir une cape invisible de calme et de protection autour de toi. Ton corps se détend, ton esprit respire, et même les petites inquiétudes deviennent moins intimidantes. C'est ce moment où tu peux juste être toi-même, poser tes épaules, sourire un peu plus et profiter du moment présent.",
+    "quiz": {
+      "questions": [
+        {
+          "question": "Quand tu es dans un endroit familier et confortable, tu ressens:",
+          "answers": [
+            "Tu te sens détendu(e) et serein(e).",
+            "Ressens un peu de tension, mais ça va.",
+            "Es sur le qui-vive et inquièt(e)."
+          ]
+        },
+        {
+          "question": "Quand une petite inquiètude apparaît, tu:",
+          "answers": [
+            "La laisse passer facilement.",
+            "La remarques, mais tu continues ton activité.",
+            "Te sens perturbé(e) et anxieux(se)."
+          ]
+        },
+        {
+          "question": "Quand tu prends un moment pour toi, tu:",
+          "answers": [
+            "Poses tes épaules souris naturellement.",
+            "Essaies de te détendre, mais ça prend du temps.",
+            "As du mal à te relaxer et profiter."
+          ]
+        }
+      ],
+      "results": [
+        "Tu te sens globalement en sécurité et to corps sait se détendre. Appuie-toi sur cette sensation quand une inquiétude apparaît.",
+        "Tu ressens parfois des tensions, mais tu continues d'avancer. Avec un peu de temps et de douceur, la détente viendra plus facilement.",
+        "Tu es souvent sur le qui-vive, même dans le calme. Ton corps cherche à te protéger: rassure-le en respirant et en t'ancrant dans l'instant."
+      ]
+    },
+    "flashcard": {
+      "title": "Flashcard: Tu es en Sécurité",
+      "definition": "🔍 Définition\n- Se sentir en sécurité = sentir que rien d'urgent ou de dangereux me menace ici et maintenant\n- Le corps comprend qu'il peut se détendre\n\n",
+      "why": "🎯 Pourquoi ?\n- Apaise le système nerveux.\n- Réduit l'anxiété et l'hypervigilance.\n- La respiration envoie un signal de sécurité au cerveau.\n\n",
+      "keyConcept": "🧩 Concepts clés\n- Sécurité = signal calme + stabilté.\n- Le corps se relâche quand il se sent en sécurité\n- La respiration envoie un signal de sécurité au cerveau.\n\n",
+      "exemple": "⚡️ Exemple rapide\nTu te sens tendue sans raison apparente → tu poses les pieds au sol → tu identifies 3 choses rassurantes → ton corps commence à se calmer.\n\n",
+      "exercice": "📝 Mini-exercice (30 secondes)\n Regarde autour de toi.\n Nomme mentalement 3 choses sûres ou agréables.\n Inspire lentement par le nez.\n Expire en te disant: « Je suis en sécurité maintenant »\n\n→ Félicitations, tu viens de rappeler à ton corps qu'il est est en sécurité !"
+    }
+  },
+  {
+    "index": 6,
+    "logo": "🎯",
+    "title": "Chapitre 6: Zone de contrôle/Zone d'accueil.",
+    "content": "La zone de contrôle regroupe tout ce sur quoi tu as un réel pouvoir : tes choix, tes actions, tes pensées et tes habitudes. C'est là que tu peux agir et provoquer du changement. La zone d'accueil, elle, concerne ce que tu ne peux pas contrôler: les émotions, le comportement des autres ou les événements extérieurs. Ici, il ne s'agit pas d'agir, mais d'observer, d'accepter et d'accueillir avec bienveillance ce qui est là, sans te juger.\n\nComprendre ces deux zones t'aide à mieux gérer ton énergie et ton stress. En te concentrant sur ce que tu peux contrôler et en accueillant ce que tu ne peux pas, tu cultives la sérénité et la résilience face aux défis de la vie.\n\nEs-tu prêt(e) à identifier tes zones de contrôle et d'accueil ?",
+    "quiz": {
+      "questions": [
+        {
+          "question": "Face à une situation stressante, tu as tendance à:",
+          "answers": [
+            "Agir sur ce qui dépend de toi.",
+            "Hésiter entre agir et lâcher prise.",
+            "Essayer de tout contrôler, même ce qui ne dépend pas de toi."
+          ]
+        },
+        {
+          "question": "Quand une émotion difficile apparaît, tu:",
+          "answers": [
+            "L'accueilles sans te juger.",
+            "La remarques, mais cherches vite à la faire disparaître.",
+            "La combats ou la repousses."
+          ]
+        },
+        {
+          "question": "Concernant le comportement des autres, tu :",
+          "answers": [
+            "Acceptes que tu ne puisses pas le contrôler.",
+            "Essaies parfois de l'influencer.",
+            "Te sens responsable ou frustré(e) de ne pas pouvoir le changer."
+          ]
+        }
+      ],
+      "results": [
+        "Tu as une bonne compréhension de tes zones de contrôle et d'accueil. Continue à cultiver cette sagesse pour naviguer sereinement dans la vie.",
+        "Tu es en chemin vers une meilleure gestion de tes zones de contrôle et d'accueil. Avec un peu de pratique, tu gagneras en sérénité.",
+        "Tu as tendance à vouloir tout contrôler, même ce qui ne dépend pas de toi. Apprendre à accueillir l'incontrôlable t'apportera plus de paix intérieure."
+      ]
+    },
+    "flashcard": {
+      "title": "Flashcard: Zone de Contrôle & Zone d'Accueil",
+      "definition": "🔍 Définition\n- Zone de contrôle = ce que tu peux influencer (tes actions, pensées)\n- Zone d'accueil = ce que tu ne peux pas contrôler (émotions, autres)\n\n",
+      "why": "🎯 Pourquoi ?\n- Réduit la frustration et la charge mentale\n- Aide à lâcher prise sans abandonner\n- Apporte plus de clarté et de calme.\n\n",
+      "keyConcept": "🧩 Concepts clés\n- Contrôler l'incontrôlable = tension\n- Accueillir = apaiser\n- Agir là ou c'est possible = équilibre.\n\n",
+      "exemple": "⚡️ Exemple rapide\nUn événement imprévu arrive → tu acceptes ce qui ne dépend pas de toi → tu choisis comment réagir → Tu passes à l'action sur ta zone de contrôle.\n\n",
+      "exercice": "📝 Mini-exercice (30 secondes)\n Identifie une situation actuelle.\n Note ce que tu contrôles.\n Accueille le reste sans jugement.\n Inspire profondément une fois.\n\n→ Félicitations, tu viens d'utiliser tes zones intelligemment."
     }
   }
 ]
