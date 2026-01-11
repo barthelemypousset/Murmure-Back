@@ -1,20 +1,14 @@
 var express = require('express');
 var router = express.Router();
 
-require('../models/connection');
 const User = require('../models/users');
 const { checkBody } = require('../modules/checkBody');
 const uid2 = require('uid2');
 const bcrypt = require('bcrypt');
 
-/* GET users listing. */
-router.get('/', function (req, res, next) {
-  res.send('respond with a resource');
-});
-
 router.post('/signup', (req, res) => {
   if (!checkBody(req.body, ['username', 'email', 'password'])) {
-    res.json({ result: false, error: 'Missing or empty fields' });
+    res.status(400).json({ result: false, error: 'Missing or empty fields' });
     return;
   }
 
@@ -40,14 +34,14 @@ router.post('/signup', (req, res) => {
         });
       });
     } else {
-      res.json({ result: false, error: 'User already exists' });
+      res.status(409).json({ result: false, error: 'User already exists' });
     }
   });
 });
 
 router.post('/signin', (req, res) => {
   if (!checkBody(req.body, ['email', 'password'])) {
-    res.json({ result: false, error: 'Missing or empty fields' });
+    res.status(400).json({ result: false, error: 'Missing or empty fields' });
     return;
   }
 
@@ -55,14 +49,14 @@ router.post('/signin', (req, res) => {
     if (data && bcrypt.compareSync(req.body.password, data.password)) {
       res.json({ result: true, token: data.token, username: data.username, progressNb: data.progressNb });
     } else {
-      res.json({ result: false, error: 'User not found or wrong password' });
+      res.status(404).json({ result: false, error: 'User not found or wrong password' });
     }
   });
 });
 
 router.put('/updateUsername', (req, res) => {
   if (!checkBody(req.body, ['token', 'newUsername'])) {
-    res.json({ result: false, error: 'Missing or empty fields' });
+    res.status(400).json({ result: false, error: 'Missing or empty fields' });
     return;
   }
 
@@ -72,14 +66,14 @@ router.put('/updateUsername', (req, res) => {
         res.json({ result: true, username: req.body.newUsername });
       });
     } else {
-      res.json({ result: false, error: 'User not found' });
+      res.status(404).json({ result: false, error: 'User not found' });
     }
   });
 });
 
 router.delete('/deleteUser', (req, res) => {
   if (!checkBody(req.body, ['token'])) {
-    res.json({ result: false, error: 'Missing or empty fields' });
+    res.status(400).json({ result: false, error: 'Missing or empty fields' });
     return;
   }
 
@@ -89,14 +83,14 @@ router.delete('/deleteUser', (req, res) => {
         res.json({ result: true, message: 'User deleted successfully' });
       });
     } else {
-      res.json({ result: false, error: 'User not found' });
+      res.status(404).json({ result: false, error: 'User not found' });
     }
   });
 });
 
 router.put('/progress', (req, res) => {
   if (!checkBody(req.body, ['progressNb', 'token'])) {
-    res.json({ result: false, error: 'Missing or empty fields' });
+    res.status(400).json({ result: false, error: 'Missing or empty fields' });
     return;
   }
 
@@ -109,10 +103,12 @@ router.put('/progress', (req, res) => {
           res.json({ result: true, progressNb: req.body.progressNb });
         });
       } else {
-        res.json({ result: false, error: 'ProgressNb can not be decreased', currentProgress: data.progressNb });
+        res
+          .status(409)
+          .json({ result: false, error: 'ProgressNb can not be decreased', currentProgress: data.progressNb });
       }
     } else {
-      res.json({ result: false, error: 'User not found' });
+      res.status(400).json({ result: false, error: 'User not found' });
     }
   });
 });

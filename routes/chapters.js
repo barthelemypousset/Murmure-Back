@@ -1,7 +1,6 @@
 var express = require('express');
 var router = express.Router();
 
-require('../models/connection');
 const Chapter = require('../models/chapters');
 
 router.get('/', async (req, res) => {
