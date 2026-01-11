@@ -3,7 +3,7 @@ const request = require("supertest");
 // Mock du modèle Mongoose pour empêcher la connexion à la base de données
 jest.mock("../models/meditations");
 
-const Meditation = require("../models/meditations");
+const Meditation = require("../src/models/meditations");
 const app = require("../app");
 
 describe("POST /meditation/player", () => {

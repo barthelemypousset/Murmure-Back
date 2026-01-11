@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
 const fs = require('fs');
-const Chapter = require('../models/chapters');
-const User = require('../models/users');
-const Meditation = require('../models/meditations');
+const Chapter = require('../src/models/chapters');
+const User = require('../src/models/users');
+const Meditation = require('../src/models/meditations');
 require('dotenv').config();
 
 // Lire le fichier JSON

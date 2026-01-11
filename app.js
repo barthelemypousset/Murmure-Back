@@ -6,10 +6,10 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const cors = require('cors');
 
-var indexRouter = require('./routes/index');
-var usersRouter = require("./routes/users");
-var chaptersRouter = require("./routes/chapters");
-var meditationRouter = require('./routes/meditation');
+var indexRouter = require('./src/routes/index');
+var usersRouter = require("./src/routes/users");
+var chaptersRouter = require("./src/routes/chaptersRoute");
+var meditationRouter = require('./src/routes/meditation');
 
 var app = express();
 

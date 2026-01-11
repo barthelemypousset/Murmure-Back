@@ -2,7 +2,7 @@
 // As this is the new entrypoint bin/www idn't necessary anymore
 
 require('dotenv').config();
-require('./models/connection');
+require('./src/models/connection');
 
 const http = require('http');
 
