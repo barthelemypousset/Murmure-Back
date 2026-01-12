@@ -19,7 +19,7 @@ async function signup(req, res) {
     email: req.body.email,
     username: req.body.username,
     password: hash,
-    progressNb: 0,
+    progressNb: req.body.progressNb || 0,
   });
 
   const token = jwt.sign({ userId: user._id, username: user.username }, process.env.JWT_SECRET, {
