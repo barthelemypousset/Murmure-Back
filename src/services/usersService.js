@@ -2,18 +2,6 @@
 
 const User = require('../models/usersModel');
 
-function getByUsername(username) {
-  return User.findOne({ username });
-}
-
-function getByEmail(email) {
-  return User.findOne({ email });
-}
-
-function getByToken(token) {
-  return User.findOne({ token });
-}
-
 function createUser(userData) {
   const user = new User({
     ...userData,
@@ -22,24 +10,41 @@ function createUser(userData) {
   return user.save();
 }
 
-function deleteByToken(token) {
-  return User.deleteOne({ token });
+function getById(id) {
+  return User.findById(id);
+}  
+
+function getByUsername(username) {
+  return User.findOne({ username });
+}  
+
+function getByEmail(email) {
+  return User.findOne({ email });
+}  
+
+// function getByToken(token) {
+//   return User.findOne({ token });  
+// }
+
+function deleteById(userId) {
+  return User.deleteOne({ _id: userId });
 }
 
-function updateUsername(token, newUsername) {
-  return User.updateOne({ token }, { username: newUsername });
+function updateUsername(userId, newUsername) {
+  return User.updateOne({ _id: userId }, { username: newUsername });
 }
 
-function updateProgress(token, progressNb) {
-  return User.updateOne({ token }, { progressNb });
+function updateProgress(userId, progressNb) {
+  return User.updateOne({ _id: userId }, { progressNb });
 }
 
 module.exports = {
   getByUsername,
   getByEmail,
-  getByToken,
+  //getByToken,
+  getById,
   createUser,
-  deleteByToken,
+  deleteById,
   updateUsername,
   updateProgress,
 };
