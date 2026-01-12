@@ -1,16 +1,18 @@
 const mongoose = require('mongoose');
 const fs = require('fs');
-const Chapter = require('../src/models/chapters');
-const User = require('../src/models/users');
-const Meditation = require('../src/models/meditations');
+const path = require('path');
 require('dotenv').config();
 
+const Chapter = require('../src/models/chaptersModel');
+const User = require('../src/models/usersModel');
+const Meditation = require('../src/models/meditationsModel');
+
 // Lire le fichier JSON
-const chapterData = JSON.parse(fs.readFileSync('data/chapters.json', 'utf-8'));
-const meditationData = JSON.parse(fs.readFileSync('data/meditations.json', 'utf-8'));
+const chapterData = JSON.parse(fs.readFileSync(path.join(__dirname, 'data', 'chapters.json'), 'utf-8'));
+const meditationData = JSON.parse(fs.readFileSync(path.join(__dirname, 'data', 'meditations.json'), 'utf-8'));
 
 // Lire le fichier json + extraire L'OID en String et convertir la date en Objet Date (En utilisant l'Optional Chaining)
-const userData = JSON.parse(fs.readFileSync('data/users.json', 'utf-8')).map((user) => ({
+const userData = JSON.parse(fs.readFileSync(path.join(__dirname, 'data', 'users.json'), 'utf-8')).map((user) => ({
   ...user,
   _id: user._id?.$oid || undefined,
   creationDate: user.creationDate?.$date ? new Date(user.creationDate.$date) : undefined,
