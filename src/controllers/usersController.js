@@ -1,6 +1,5 @@
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
-const uid2 = require('uid2');
 const { checkBody } = require('../modules/checkBody');
 const usersService = require('../services/usersService');
 
@@ -20,7 +19,6 @@ async function signup(req, res) {
     email: req.body.email,
     username: req.body.username,
     password: hash,
-    token: uid2(32),
     progressNb: 0,
   });
 
