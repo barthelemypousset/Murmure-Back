@@ -8,18 +8,18 @@
   },
   "dependencies": {
     "bcrypt": "^6.0.0",
-    "cloudinary": "^2.8.0",
     "cookie-parser": "~1.4.4",
     "cors": "^2.8.5",
     "debug": "~2.6.9",
     "dotenv": "^17.2.3",
     "express": "~4.16.1",
-    "express-fileupload": "^1.5.2",
+    "jsonwebtoken": "^9.0.3",
     "mongoose": "^9.0.1",
     "morgan": "~1.9.1",
     "openai": "^6.10.0",
     "socket.io": "^4.8.1",
-    "uid2": "^1.0.0",
+    "express-fileupload": "^1.5.2",
+    "cloudinary": "^2.8.0",
     "uniqid": "^5.4.0"
   },
   "devDependencies": {

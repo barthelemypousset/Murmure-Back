@@ -1,5 +1,11 @@
+// server.js, is responsible for creating the server, listening for incoming requests, and handling errors
+// As this is the new entrypoint bin/www idn't necessary anymore
+
 require('dotenv').config();
+require('./src/models/connection');
+
 const http = require('http');
+
 const { Server } = require('socket.io'); //server de socket.io (websocket)
 const OpenAI = require('openai');
 const app = require('./app'); // Express principal, contient toutes les routes
