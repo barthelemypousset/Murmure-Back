@@ -1,9 +1,9 @@
 const request = require("supertest");
 
 // Mock du modèle Mongoose pour empêcher la connexion à la base de données
-jest.mock("../models/meditations");
+jest.mock('../src/models/meditationsModel');
 
-const Meditation = require("../src/models/meditations");
+const Meditation = require("../src/models/meditationsModel");
 const app = require("../app");
 
 describe("POST /meditation/player", () => {
@@ -11,7 +11,7 @@ describe("POST /meditation/player", () => {
     // Simulation de la réponse : méditation trouvée, renvoie un lien url
     Meditation.findOne.mockResolvedValue({ audioUrl: "https//lienaudio.mp3" });
 
-    const res = await request(app).post("/meditation/player").send({
+    const res = await request(app).get("/meditation/player").send({
       theme: "anxiete",
       mode: "guidee",
       duration: 3,
@@ -26,7 +26,7 @@ describe("POST /meditation/player", () => {
     // Simulation de la réponse : aucun résultat
     Meditation.findOne.mockResolvedValue(null);
 
-    const res = await request(app).post("/meditation/player").send({
+    const res = await request(app).get("/meditation/player").send({
       theme: "nimportequoi",
       mode: "guidee",
       duration: 3,
@@ -38,7 +38,7 @@ describe("POST /meditation/player", () => {
 
   it("retourne une erreur si un ou plusieurs des paramètres d entrée est manquant", async () => {
     // Dans ce test la base ne doit même pas être appelée
-    const res = await request(app).post("/meditation/player").send({
+    const res = await request(app).get("/meditation/player").send({
       theme: "anxiete",
     });
 

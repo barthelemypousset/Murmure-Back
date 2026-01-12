@@ -1,4 +1,6 @@
-require("dotenv").config();
+require('dotenv').config();
+require('../src/models/connection');
+
 const request = require("supertest");
 const app = require("../app");
 const mongoose = require("mongoose");
@@ -23,7 +25,6 @@ test("GET /chapters/:id should return a single chapter", async () => {
 });
 
 test("GET /chapters/:id should return 404 if not found", async () => {
-  const id = new mongoose.Types.ObjectId();
   const res = await request(app).get(`/chapters/404`);
 
   expect(res.status).toBe(404);
