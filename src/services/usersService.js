@@ -1,9 +1,9 @@
 // Service handle interaction with the db
 
-const User = require('../models/usersModel');
+const Users = require('../models/usersModel');
 
 function createUser(userData) {
-  const user = new User({
+  const user = new Users({
     ...userData,
     creationDate: new Date(),
   });
@@ -11,37 +11,32 @@ function createUser(userData) {
 }
 
 function getById(id) {
-  return User.findById(id);
-}  
+  return Users.findById(id);
+}
 
 function getByUsername(username) {
-  return User.findOne({ username });
-}  
+  return Users.findOne({ username });
+}
 
 function getByEmail(email) {
-  return User.findOne({ email });
-}  
-
-// function getByToken(token) {
-//   return User.findOne({ token });  
-// }
+  return Users.findOne({ email });
+}
 
 function deleteById(userId) {
-  return User.deleteOne({ _id: userId });
+  return Users.deleteOne({ _id: userId });
 }
 
 function updateUsername(userId, newUsername) {
-  return User.updateOne({ _id: userId }, { username: newUsername });
+  return Users.updateOne({ _id: userId }, { username: newUsername });
 }
 
 function updateProgress(userId, progressNb) {
-  return User.updateOne({ _id: userId }, { progressNb });
+  return Users.updateOne({ _id: userId }, { progressNb });
 }
 
 module.exports = {
   getByUsername,
   getByEmail,
-  //getByToken,
   getById,
   createUser,
   deleteById,
