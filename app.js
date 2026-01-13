@@ -23,7 +23,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use("/users", usersRouter);
 app.use("/chapters", chaptersRouter);
-app.use('/meditation', meditationRouter);
+app.use('/meditations', meditationRouter);
 
 
 module.exports = app;

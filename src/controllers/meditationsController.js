@@ -5,11 +5,14 @@ const meditationsService = require('../services/meditationsService');
 
 async function getPlayerMeditation(req, res) {
   try {
-    const { theme, mode, duration } = req.body;
+    const { theme, mode, duration } = req.query;
 
-    if (!checkBody(req.body, ['theme', 'mode', 'duration'])) {
-      return res.status(400).json({ result: false, error: 'Missing or empty fields' });
-    }
+  if (!theme || !mode || !duration) {
+    return res.status(400).json({
+      result: false,
+      error: 'Missing query parameters',
+    });
+  }
 
     const meditation = await meditationsService.findMeditation({
       theme,
