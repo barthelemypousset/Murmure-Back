@@ -64,7 +64,7 @@ async function callAIWithHistory(conversation) {
   try {
     // cf cours: client.chat.completions permet le dialogue
     const completion = await client.chat.completions.create({
-      model: 'google/gemma-2-2b-it',
+      model: 'google/gemma-3-27b-it:featherless-ai',
       //   Autres models: google/gemma-2-9b-it ou :meta-llama/Llama-3.2-3B-Instruct
       messages: conversation,
       temperature: 0.6, //controle de la créativité: 0 déteministe, précis / 0.8 plus aléatoire
