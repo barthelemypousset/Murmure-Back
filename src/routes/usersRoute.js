@@ -11,4 +11,9 @@ router.put('/updateUsername', auth, usersController.updateUsername);
 router.delete('/deleteUser', auth, usersController.deleteUser);
 router.put('/progress', auth, usersController.updateProgress);
 
+//check jwtToken state
+router.get('/check', auth, (req, res) => {
+  res.status(200).json({ result: true });
+});
+
 module.exports = router;

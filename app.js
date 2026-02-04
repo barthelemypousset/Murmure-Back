@@ -15,8 +15,8 @@ var app = express();
 
 // Whitelist of allowed frontend domains
 const allowedOrigins = [
-  'https://murmure.expo.app', // <--- !!! REPLACE with your Vercel/Render frontend URL
-  'http://localhost:8081', // Allows local development with `npx expo start --web`
+  'https://murmure.expo.app',
+  'http://localhost:8081',
 ];
 
 const corsOptions = {
